@@ -2,7 +2,7 @@
 let requestData = [];
 
 async function loadData() {
-  const res = await fetch('/api/data');
+  const res = await fetch('data.json');
   requestData = await res.json();
   populateRows();
 }
